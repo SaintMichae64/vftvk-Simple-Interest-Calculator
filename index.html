@@ -1,16 +1,44 @@
+<!DOCTYPE html>
+
 <html>
     <head>
+    <title>Simple Interest Calculator</title>    
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="maindiv">
+                        
+                    <h1>Web App Simple Interest Calculator</h1>
+                    <!-- Added dollar sign to Amount to set currency -->
+                    <label for="principal">Amount ($)</label></label>
+                    <input type="number"  id="principal" placeholder="Eg: 1000">  <br>
+                    <div class="slidecontainer" onchange="rangeslider()">
+                        <label for="myRange">Interest Rate </label>
+                        <input type="range" min="1" max="20" value="10.25" step="0.1" class="slider" id="myRange"><span id="demo">10.25%</span>
+                    </div><br>
+                    <label for="years">No. of Years</label>
+                    <select name="years" id="years">
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+                        <option value=10>10</option>
+                        <option value=15>15</option>
+                        <option value=20>20</option>
+                    </select><br>
+                    <span id="result"></span><br>
+                    <button onclick = "simpleinterest()" >Calculate Interest</button>
+                    <p><span id="outer1"></span></p>
+                    <footer>Ⓒ Everyone Get Rich - Made by Q. Felthauser</footer>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        </div>
+        
+        
     </body>
 </html>
