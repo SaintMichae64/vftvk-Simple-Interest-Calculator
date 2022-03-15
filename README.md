@@ -1,1 +1,2 @@
-# coding-project-template
+# My submittal for the Coursera Full Stack Developers Course. 
+# My first try...
